@@ -1,0 +1,58 @@
+{
+  "name": "bartimaeus-components",
+  "version": "1.0.0",
+  "description": "Example react component library",
+  "main": "dist/main.js",
+  "scripts": {
+    "postbuild": "npm pack && tar -xvzf *.tgz && rm -rf package *.tgz",
+    "prepublishOnly": "npm run build",
+    "start": "cross-env NODE_ENV=development webpack-cli --progress --colors",
+    "styleguide": "styleguidist server",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Eric Shelley <eric@webdesignbakery.com>",
+  "license": "MIT",
+  "peerDependencies": {
+    "react": ">=16.9.0",
+    "react-dom": ">=16.9.0",
+    "prop-types": "^15.7.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.10.4",
+    "@babel/preset-env": "^7.10.4",
+    "@babel/preset-react": "^7.10.4",
+    "antd": "^4.4.0",
+    "babel-loader": "^8.1.0",
+    "babel-plugin-import": "^1.13.0",
+    "clean-webpack-plugin": "^3.0.0",
+    "core-js": "^3.6.5",
+    "cross-env": "^7.0.2",
+    "css-loader": "^3.6.0",
+    "customize-cra": "^1.0.0",
+    "eslint": "^7.2.0",
+    "eslint-config-airbnb": "^18.2.0",
+    "eslint-loader": "^4.0.2",
+    "eslint-plugin-import": "^2.22.0",
+    "eslint-plugin-jsx-a11y": "^6.3.1",
+    "eslint-plugin-react": "^7.20.3",
+    "eslint-plugin-react-hooks": "^4.0.0",
+    "prop-types": "^15.7.2",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
+    "react-scripts": "^3.4.1",
+    "react-styleguidist": "^11.0.8",
+    "style-loader": "^1.2.1",
+    "terser-webpack-plugin": "^3.0.6",
+    "webpack": "^4.43.0",
+    "webpack-cli": "^3.3.12",
+    "webpack-merge": "^4.2.2"
+  },
+  "browserslist": [
+    ">0.25%",
+    "not ie 11",
+    "not op_mini all"
+  ],
+  "files": [
+    "/dist"
+  ]
+}
