@@ -1,0 +1,11 @@
+.logo {
+  display: flex;
+  align-items: center;
+  margin: 0;
+  font-size: 18px;
+  font-weight: normal;
+}
+.image {
+  width: 2.5em;
+  margin-left: -0.5em;
+}
